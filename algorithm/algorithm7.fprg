@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Enes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-24 08:46:36 &#214;S"/>
+        <attribute name="created" value="RW5lcztERVNLVE9QLUVUQjRKOEc7MjAyMy0xMi0yNDswNzoxNTo0NCDDllM7Mjg3MQ=="/>
+        <attribute name="edited" value="RW5lcztERVNLVE9QLUVUQjRKOEc7MjAyMy0xMi0yNDswODo0NjozNiDDllM7MjsyOTg2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="S&#305;f&#305;r girilinceye kadar klavyeden girilen de&#287;erlerin ortalamas&#305;n&#305; hesaplayan program."/>
+            <declare name="topla, sayi, sayac, ort" type="Integer" array="False" size=""/>
+            <assign variable="topla" expression="0"/>
+            <assign variable="sayac" expression="1"/>
+            <output expression="&quot;0 de&#287;eri girilinceye kadar ortalamas&#305; al&#305;nacak de&#287;erleri giriniz: &quot;" newline="True"/>
+            <do expression="sayi != 0">
+                <output expression="sayac &amp; &quot;. say&#305;y&#305; giriniz: &quot;" newline="True"/>
+                <input variable="sayi"/>
+                <assign variable="topla" expression="topla + sayi"/>
+                <assign variable="sayac" expression="sayac + 1"/>
+            </do>
+            <assign variable="ort" expression="topla / (sayac - 2)"/>
+            <output expression="&quot;Girilen &quot; &amp; sayac - 2 &amp; &quot; adet say&#305;n&#305;n toplam&#305;: &quot; &amp; topla" newline="True"/>
+            <output expression="&quot;Girilen &quot; &amp; sayac - 2 &amp; &quot; adet say&#305;n&#305;n ortalamas&#305;:&quot; &amp; ort" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

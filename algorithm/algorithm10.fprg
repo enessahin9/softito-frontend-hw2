@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Enes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-24 10:20:24 &#214;S"/>
+        <attribute name="created" value="RW5lcztERVNLVE9QLUVUQjRKOEc7MjAyMy0xMi0yNDsxMDoxNzoyNSDDllM7Mjg2Ng=="/>
+        <attribute name="edited" value="RW5lcztERVNLVE9QLUVUQjRKOEc7MjAyMy0xMi0yNDsxMDoyMDoyNCDDllM7MTsyOTY3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Klavyeden girilecek bir say&#305;n&#305;n tek mi &#231;ift mi oldu&#287;unu bulan program."/>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <output expression="&quot;Kontrol etmek istedi&#287;iniz say&#305;y&#305; giriniz: &quot;" newline="True"/>
+            <input variable="x"/>
+            <if expression="x &lt; 0">
+                <then>
+                    <output expression="&quot;Pozitif bir de&#287;er giriniz!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="x % 2 == 0">
+                        <then>
+                            <output expression="&quot;Girilen say&#305; &#231;ifttir!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Girilen say&#305; tektir!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

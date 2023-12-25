@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Enes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-24 10:25:42 &#214;S"/>
+        <attribute name="created" value="RW5lcztERVNLVE9QLUVUQjRKOEc7MjAyMy0xMi0yNDsxMDowNjo0NiDDllM7Mjg2Nw=="/>
+        <attribute name="edited" value="RW5lcztERVNLVE9QLUVUQjRKOEc7MjAyMy0xMi0yNDsxMDoyNTo0MiDDllM7MjsyOTcz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Klavyeden girilecek iki pozitif tam say&#305;n&#305;n OBEB (Ortak B&#246;lenlerin En B&#252;y&#252;&#287;&#252;)'ini hesaplayan program."/>
+            <declare name="sayi1, sayi2, kucukSayi, i, ebob" type="Integer" array="False" size=""/>
+            <output expression="&quot;OBEB hesaplamak istedi&#287;iniz 1. say&#305;y&#305; giriniz: &quot;" newline="False"/>
+            <input variable="sayi1"/>
+            <output expression="&quot;OBEB hesaplamak istedi&#287;iniz 2. say&#305;y&#305; giriniz: &quot;" newline="True"/>
+            <input variable="sayi2"/>
+            <if expression="sayi1 &gt; sayi2">
+                <then>
+                    <assign variable="kucukSayi" expression="sayi2"/>
+                </then>
+                <else>
+                    <assign variable="kucukSayi" expression="sayi1"/>
+                </else>
+            </if>
+            <for variable="i" start="1" end="kucukSayi + 1" direction="inc" step="1">
+                <if expression="(sayi1 % i == 0) &amp;&amp; (sayi2 % i == 0)">
+                    <then>
+                        <assign variable="ebob" expression="i"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;OBEB = &quot; &amp; ebob" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

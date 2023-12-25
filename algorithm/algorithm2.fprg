@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Enes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-24 06:14:12 &#214;S"/>
+        <attribute name="created" value="RW5lcztERVNLVE9QLUVUQjRKOEc7MjAyMy0xMi0yMzswMjoxODo0MCDDllM7Mjg2NA=="/>
+        <attribute name="edited" value="RW5lcztERVNLVE9QLUVUQjRKOEc7MjAyMy0xMi0yNDswNjoxNDoxMiDDllM7MzsyOTc0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Klavyeden girilecek bir N de&#287;erine kadar fibonacci dizisini bulan program."/>
+            <declare name="x, y, z, s, n" type="Integer" array="False" size=""/>
+            <assign variable="x" expression="1"/>
+            <assign variable="y" expression="1"/>
+            <assign variable="s" expression="3"/>
+            <input variable="n"/>
+            <output expression="x &amp; &quot; &quot;" newline="False"/>
+            <output expression="y &amp; &quot; &quot;" newline="False"/>
+            <while expression="s &lt;= n">
+                <assign variable="z" expression="x + y"/>
+                <output expression="z &amp; &quot; &quot;" newline="False"/>
+                <assign variable="x" expression="y"/>
+                <assign variable="y" expression="z"/>
+                <assign variable="s" expression="s + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

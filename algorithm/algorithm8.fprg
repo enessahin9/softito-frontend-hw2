@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Enes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-24 10:06:40 &#214;S"/>
+        <attribute name="created" value="RW5lcztERVNLVE9QLUVUQjRKOEc7MjAyMy0xMi0yNDswODo0ODo1OCDDllM7Mjg4Mw=="/>
+        <attribute name="edited" value="RW5lcztERVNLVE9QLUVUQjRKOEc7MjAyMy0xMi0yNDsxMDowNjo0MCDDllM7MTsyOTY5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Klavyeden girilecek 20 say&#305;n&#305;n tek olanlar&#305;n&#305; ayr&#305;, &#231;ift olanlar&#305;n&#305; ayr&#305; toplay&#305;p ekrana yazd&#305;ran program."/>
+            <declare name="i, sayi, ttoplam, ctoplam" type="Integer" array="False" size=""/>
+            <assign variable="ttoplam" expression="0"/>
+            <assign variable="ctoplam" expression="0"/>
+            <output expression="&quot;20 adet say&#305; giriniz: &quot;" newline="True"/>
+            <for variable="i" start="0" end="19" direction="inc" step="1">
+                <input variable="sayi"/>
+                <if expression="sayi % 2 == 0">
+                    <then>
+                        <assign variable="ctoplam" expression="ctoplam + sayi"/>
+                    </then>
+                    <else>
+                        <assign variable="ttoplam" expression="ttoplam + sayi"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;Girilen de&#287;erlerin tek say&#305; toplamlar&#305;: &quot; &amp; ttoplam" newline="True"/>
+            <output expression="&quot;Girilen de&#287;erlerin &#231;ift say&#305; toplamlar&#305;: &quot; &amp; ctoplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

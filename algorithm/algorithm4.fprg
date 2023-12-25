@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Enes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-24 06:33:00 &#214;S"/>
+        <attribute name="created" value="RW5lcztERVNLVE9QLUVUQjRKOEc7MjAyMy0xMi0yNDswNjoxMjoyOCDDllM7Mjg2OQ=="/>
+        <attribute name="edited" value="RW5lcztERVNLVE9QLUVUQjRKOEc7MjAyMy0xMi0yNDswNjozMzowMCDDllM7MjsyOTcx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Kullan&#305;c&#305;dan &#252;&#231; adet say&#305; al&#305;p, ortanca say&#305;y&#305; ekrana yazd&#305;ran program."/>
+            <declare name="x, y, z" type="Integer" array="False" size=""/>
+            <output expression="&quot;B&#252;y&#252;kl&#252;k s&#305;ralamas&#305;nda ortanca say&#305;y&#305; bulmak istedi&#287;iniz &#252;&#231; adet say&#305;y&#305; giriniz: &quot;" newline="True"/>
+            <input variable="x"/>
+            <input variable="y"/>
+            <input variable="z"/>
+            <if expression="x &lt; y &amp;&amp; y &lt; z || z &lt; y &amp;&amp; y &lt; x">
+                <then>
+                    <output expression="&quot;Ortanca say&#305;: &quot; &amp;  y" newline="True"/>
+                </then>
+                <else>
+                    <if expression="y &lt; x &amp;&amp; x &lt; z || z &lt; x &amp;&amp; x &lt; y">
+                        <then>
+                            <output expression="&quot;Ortanca say&#305;: &quot; &amp;  x" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="x &lt; z &amp;&amp; z &lt; y || y &lt; z &amp;&amp; z &lt; x">
+                                <then>
+                                    <output expression="&quot;Ortanca say&#305;: &quot; &amp;  z" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;L&#252;tfen birbirinden farkl&#305; &#252;&#231; tam say&#305; giriniz!&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

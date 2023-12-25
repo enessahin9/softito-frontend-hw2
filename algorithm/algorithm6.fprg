@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Enes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-24 10:24:21 &#214;S"/>
+        <attribute name="created" value="RW5lcztERVNLVE9QLUVUQjRKOEc7MjAyMy0xMi0yNDswNzowMTozOCDDllM7Mjg2OQ=="/>
+        <attribute name="edited" value="RW5lcztERVNLVE9QLUVUQjRKOEc7MjAyMy0xMi0yNDsxMDoyNDoyMSDDllM7MzsyOTcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Klavyeden girilen A ve B gibi iki say&#305;n&#305;, &#231;arpma i&#351;lemi kullanmadan sadece toplama ve &#231;&#305;karma kullanarak &#231;arp&#305;mlar&#305;n&#305; ekrana yazd&#305;ran program."/>
+            <declare name="a, b, sayac" type="Integer" array="False" size=""/>
+            <assign variable="sayac" expression="0"/>
+            <output expression="&quot;&#199;arp&#305;lacak ilk say&#305;y&#305; giriniz: &quot;" newline="False"/>
+            <input variable="a"/>
+            <output expression="&quot;&#199;arp&#305;lacak ikinci say&#305;y&#305; giriniz: &quot;" newline="False"/>
+            <input variable="b"/>
+            <if expression="a &lt; 0 &amp;&amp; b &lt; 0">
+                <then>
+                    <assign variable="a" expression="Abs(a)"/>
+                    <assign variable="b" expression="Abs(b)"/>
+                    <for variable="b" start="b" end="1" direction="dec" step="1">
+                        <assign variable="sayac" expression="sayac + a"/>
+                    </for>
+                </then>
+                <else>
+                    <for variable="b" start="b" end="1" direction="dec" step="1">
+                        <assign variable="sayac" expression="sayac + a"/>
+                    </for>
+                </else>
+            </if>
+            <output expression="&quot;Say&#305;lar&#305;n &#231;arp&#305;m&#305; = &quot; &amp; sayac" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

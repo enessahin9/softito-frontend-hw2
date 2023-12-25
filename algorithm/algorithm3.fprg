@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Enes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-24 10:21:52 &#214;S"/>
+        <attribute name="created" value="RW5lcztERVNLVE9QLUVUQjRKOEc7MjAyMy0xMi0yMzswMjo0MTo1MiDDllM7Mjg2Mw=="/>
+        <attribute name="edited" value="RW5lcztERVNLVE9QLUVUQjRKOEc7MjAyMy0xMi0yNDsxMDoyMTo1MiDDllM7NzsyOTc1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Klavyeden girilen bir say&#305;n&#305;n t&#252;m tam b&#246;lenlerini bulup listeleyen program."/>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Tam b&#246;lenlerini g&#246;rmek istedi&#287;iniz say&#305;y&#305; giriniz: &quot;" newline="True"/>
+            <input variable="n"/>
+            <if expression="n &lt;= 0">
+                <then>
+                    <output expression="&quot;Pozitif bir tamsay&#305; giriniz!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <for variable="i" start="1" end="n" direction="inc" step="1">
+                        <if expression="n % i == 0">
+                            <then>
+                                <output expression="i" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

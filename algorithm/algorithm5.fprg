@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Enes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-24 07:01:01 &#214;S"/>
+        <attribute name="created" value="RW5lcztERVNLVE9QLUVUQjRKOEc7MjAyMy0xMi0yNDswNjozNDozOSDDllM7Mjg3NQ=="/>
+        <attribute name="edited" value="RW5lcztERVNLVE9QLUVUQjRKOEc7MjAyMy0xMi0yNDswNzowMTowMSDDllM7MzsyOTY5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Klavyeden girilen A ve B gibi iki say&#305;y&#305;, b&#246;lme i&#351;lemi kullanmadan sadece toplama ve &#231;&#305;karma kullanarak kalanl&#305; b&#246;lme yapt&#305;ran program."/>
+            <declare name="a, b, b&#246;l&#252;m" type="Integer" array="False" size=""/>
+            <assign variable="b&#246;l&#252;m" expression="0"/>
+            <output expression="&quot;B&#246;l&#252;nen say&#305;y&#305; giriniz: &quot;" newline="False"/>
+            <input variable="a"/>
+            <output expression="&quot;B&#246;len say&#305;y&#305; giriniz: &quot;" newline="False"/>
+            <input variable="b"/>
+            <if expression="b == 0">
+                <then>
+                    <output expression="&quot;Sonsuz!&quot;" newline="False"/>
+                </then>
+                <else>
+                    <while expression="a &gt;= b">
+                        <assign variable="a" expression="a - b"/>
+                        <assign variable="b&#246;l&#252;m" expression="b&#246;l&#252;m + 1"/>
+                    </while>
+                    <output expression="&quot;B&#246;l&#252;m: &quot; &amp; b&#246;l&#252;m" newline="True"/>
+                    <output expression="&quot;Kalan: &quot; &amp; a" newline="False"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

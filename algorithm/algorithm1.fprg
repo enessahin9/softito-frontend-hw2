@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Enes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-24 06:13:30 &#214;S"/>
+        <attribute name="created" value="RW5lcztERVNLVE9QLUVUQjRKOEc7MjAyMy0xMi0yMzswMTo1MDo1MCDDllM7Mjg2MA=="/>
+        <attribute name="edited" value="RW5lcztERVNLVE9QLUVUQjRKOEc7MjAyMy0xMi0yNDswNjoxMzozMCDDllM7MzsyOTcz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, n, i" type="Integer" array="False" size=""/>
+            <comment text="Girilecek X de&#287;erinden N de&#287;erine kadar olan  t&#252;m do&#287;al say&#305;lar&#305; listeleyen program."/>
+            <output expression="&quot;X de&#287;erini giriniz: &quot;" newline="False"/>
+            <input variable="x"/>
+            <output expression="&quot;N de&#287;erini giriniz: &quot;" newline="False"/>
+            <input variable="n"/>
+            <if expression="n &lt;= x">
+                <then>
+                    <output expression="&quot;L&#252;tfen N de&#287;erini X de&#287;erinden b&#252;y&#252;k giriniz!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <for variable="i" start="x" end="n" direction="inc" step="1">
+                        <output expression="i" newline="True"/>
+                    </for>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
